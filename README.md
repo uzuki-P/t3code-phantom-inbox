@@ -2,7 +2,7 @@
 
 A red, black and white theme for [T3 Code](https://github.com/pingdotgg/t3code), styled like a phone chat app from a stylish JRPG. Your messages are jagged red bubbles. Replies sit on a sheet with a jagged red frame. Every edge is square and the composer has a hard red offset shadow.
 
-It works in dark and light mode. All the chat text checked in both modes meets WCAG AA contrast (4.5:1).
+It works in dark and light mode, and comes in a [muted variant](#muted-variant) with a softer red. All the chat text checked in both modes meets WCAG AA contrast (4.5:1).
 
 ![Phantom Inbox, dark mode](screenshots/hero-dark.png)
 
@@ -23,6 +23,18 @@ t3 theme set t3-code
 ```
 
 You can also ask an agent running inside T3 Code to apply it with the `t3_theme_set` tool, passing the file's JSON as `theme` and `phantom-inbox` as `themeId`.
+
+## Muted variant
+
+If the bright red is too much, `phantom-inbox-muted.json` is the same theme with a softer brick red (`#A84B4B` instead of `#D7141A`). The bubbles, frames, composer shadow, selected row and background dots all use it. Links, focus and error colors are softened to match. Chip colors are the same, and everything still meets WCAG AA.
+
+```sh
+t3 theme set ./phantom-inbox-muted.json --id phantom-inbox-muted
+```
+
+| Dark | Light |
+|---|---|
+| ![](screenshots/muted-dark.png) | ![](screenshots/muted-light.png) |
 
 ## What it styles
 
